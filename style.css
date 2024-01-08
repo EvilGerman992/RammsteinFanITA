@@ -159,6 +159,10 @@ body {
    text-decoration:underline;
    }
 
+h1{
+  font-size: 20px;
+}
+
 div #componenti-lista{
  background-color:#653434;
  opacity: 0.9;
