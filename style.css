@@ -1,0 +1,343 @@
+/*TUTTO CIO CHE è CONTENUTO QUI DENTRO 
+SI RIFERISCE ALL'ELEMENTO-----  < STYLE>  -----CHE DOVREBBE ESSERE COMPRESO DENTRO AL DOCUMENTO HTML DIRETTAMENTE, SOTTO L'ELEMENTO <BODY>,MA PROPRIO PERCHE SI FANNO LE COSE CON ORDINE IL FILE CSS. LO TENIAMO A PARTE   */
+
+/*BORDER-RADIUS SMUSSA GLI SPIGOLI */
+
+/*PADDING PER DISTANZIARE  GLI ELEMENTID'INTERNO*/
+
+/*MARGIN USATO PER IL DISTANZIAMENTO TRA ELEMENTI ESTERNI*/
+
+/*MAX WIDTH-SE ATTRIBUTO ALL'ELEMENTO BODY(OVVERO TUTTA LA PAGINA) RIDIMENSIONA LA PAGINA INTERA */
+
+/*CON LA PROPRIETà BACKGROUND-IMAGE POSSO INSERIRE UNO SFONDO O UNA FOTO 
+COME SFONDO DI TUTTA LA PAGINA- ESEMPIO PER LO SFONDO:
+ BACKGROUND-IMAGE:LINEAR-GRADIENT(BLUE,RED,YELLOW);  (PER SFONDO DI MIX COLORI).
+  O PER INSERIRE UN'IMMAGINE :
+  BACKGROUND-IMAGE:url( inccollare QUI  DENTRO);  in questo caso l'immagine la si prende dalla
+   cartella dove contiene anche i correnti doc.css e html.
+  esempio:
+   BACKGROUND-IMAGE:URL('crop.jpeg');
+  CON BACKGR-SIZE si definisce la dimensione ovviamente , o per centarla BACKGR-POSITION:CENTER
+   e così via altre molte
+   proprietà da attribuire al background in qustione.es:
+ background-position:center;
+  background-size:600px 800px;).
+  La stessa cosa la può fare prendendo un'immagine da intenet importando la URL direttamente 
+  qui nel css senza doverla immettere anche nell'html! esempio:
+BACKGROUND-IMAGE:URL('https://images.unsplash.com/photo-1498262257252-c282316270bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2487&q=80');
+-per il  caso appena sopracitato  per importare dal web img è unsplash
+(assicurarsi si aprire l'immagine desiderata in una nuova finestra poi tasto condividi e copia il link|||!
+*/
+ 
+/*con la proprietà BOX-SHADOW si puo creare l'effetto ombra dietro a background-titoli -paragrafi ,
+e con le ralative misure si puo dare piu i meno ombra,inoltre si puo cambiare il colore dell'ombra 
+aggiungendo direttamente l'attributo colore subito dopo gli attributi misura.
+lo stesso lo si può fare digitando TEXT-SHADOW modificando nello stesso modo il testo*/
+
+/*con la proprietà BORDER-RADIUS posso smussare gli angoli dei bordi desiderati*/
+
+/*con la proprietà FLOAT si possono AFFIANCARE ai file Immagine  dei testi che <Seguono>. es: FLOAT:LEFT.FLOAT:RIGHT 
+. mentre con la proprietà FLOAT:CLEAR impedisco ad altri paragrafi o titoli che seguono di 'attaccarsi 'ai precedenti
+ file img e testo, messi insieme da float:left o right! */
+
+/*con la proprietà OPACITY modifichiamo la trasparenza dell'elemento(da 0(completamente trasp.) A 1(completamente visibile) per dargli il valore)*/
+
+/*con la proprietà POSITION posso cambiare posizione ad un elemento (molto utile per fissare un'elemento molto importante FISSO metre scrolli la pagina )es:
+ POSITION:FIXED; top 0px; left 0px; (E gli diciamo di non tenere nessuno spazio ne in alto ne a sinistra)(PER EFFETTO BANNER IRREMOVIBILE TIPO)         */
+
+ /*Le differenze principali tra id e classi sono:
+Specificità: Gli ID hanno una specificità maggiore rispetto alle classi. Ciò significa che se ci sono conflitti tra stili definiti per lo stesso elemento tramite un id e una classe, gli stili dell'id avranno la precedenza.
+Utilizzo: Gli id sono spesso utilizzati per selezionare un elemento specifico per lo styling o per manipolarlo con JavaScript. Le classi, d'altro canto, vengono utilizzate per raggruppare elementi che condividono un determinato stile o comportamento.
+ Le CLASSI sono più flessibili e consentono di applicare lo stesso stile a più elementi. Puoi riutilizzare le classi in tutto il documento, mentre gli id dovrebbero essere unici per ogni elemento.
+In generale, è una pratica comune utilizzare le classi per applicare stili simili a più elementi, mentre gli id vengono utilizzati per identificare elementi unici o per selezionare elementi specifici per interazioni JavaScript. Tuttavia, la scelta tra id e classi dipende dal contesto specifico e dalle esigenze del tuo progetto.*/
+
+/*La proprietà CSS "POSITION:RELATIVE;" permette di spostare un elemento all'interno del suo contenitore, come se fosse una scatola. Immagina di avere una scatola e un oggetto dentro di essa. Con questa proprietà, puoi spostare l'oggetto all'interno della scatola, ma senza influire sugli altri oggetti intorno ad esso. È un po' come muovere un giocattolo all'interno di una scatola senza che gli altri giocattoli intorno a esso vengano spostati.*/
+
+
+/*con la proprietà HOVER posso andare a modificare (nascondere o sottolineare )elementi .es:
+ h3.fede:hover{
+      color:none;   -------in questo modo gli ho detto nascondimi
+    text-shadow:none;-----il colore del testo, e l'ombra del testo al passagio del mouse!
+  
+    text-decoration:underline(sottolineami il testoal passaggio del mouse,MOLTO UTILE PER I LINK!)
+     }
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+  
+
+body {
+    color:#D3A550;
+   background-color: #303030;
+   background-size:800px/*LARGH.*/ 800px/*LUNGH.*/;
+   margin-bottom: 300px;}
+  /*SE AVESSI VOLUTO METTERE COME SFONDO DEL BODY UN'IMMAGINE(AL POSTO DELL'ATTUALE COLORE NERO) PRESA DAL WEB AVREI INSERITO QUESTO TIPO DI URL :
+  background-image:url('https://images.unsplash.com/photo-1664865423619-601444aecdf7?ixlib=rb-
+  4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80');
+  /* QUESTA PROPRIETà L'AVREI USATA PER REPLICARE PIU VOLTE UN'IMMAGINE DI SFONDO PER IL BODY:
+  background-repeat:repeat;*/
+
+  .ora-attuale{
+    color:#ff0707;
+     width: 100px;height: 70px;
+     border-radius: 20%;
+     text-align:center; 
+    display: flex;
+    padding-top:10px;
+    float:left;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size:30px
+   }
+     
+      #current-time{
+      display: flex;
+      font-size: 30px;
+      padding-left:30px; 
+      padding-top:45px;
+      font-family:fantasy;}
+
+    
+    h3.fede {
+      position: fixed;
+      color:#ffdd9f;
+      text-shadow: #fa5454;
+      margin-left: 20%;
+      margin-top: 15%;
+      font-size: small;
+      left: 0;
+      top: 0;
+      writing-mode: vertical-lr;             /*tramite queste 2 proprietà ho potuto far 
+                                          ruotare il mio titolo m h3 di 180 e metterlo in verticale*/
+      transform: rotate(-180deg)  }
+
+    h3.fede:hover{
+      color:none;
+      text-shadow:none;
+     }
+
+ /* titolo  principale */
+ .TESTATA { 
+  text-align: center; 
+  color:#ffdd9f;
+  font-size: 150%;
+  font-family: 'Lexend Peta', sans-serif;                                              
+  /*----------------------------------------IN QUESTO SPECIFICO CASO MI SONO COMPLICATO LE COSE METTENDO DENTRO AD UN TITOLO ,
+  UNA FOTO,CON TANTO DI BORDO,OMBRA DEL BORDO E MISURE ADEGUATE PER RENDERLO BELLO DA VEDERE-------------------------------------------------*/
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: #fa5454 3px 3px;
+  margin-bottom:100px ;
+  border-color: rgba(145, 1, 1, 0.5);/*con la modifica tramite rgb del colore ho potuto 
+  rendere opaco in mquesto caso solo il bordo,senza dover aprire una sezione di modifica a parte!!!!!!*/
+  border-style: double;
+  border-width: 45px ;/*border width =bordo largehezza*/
+  padding-bottom:50%; /*padding definisce lo spazio vuoto (padding) tra il contenuto di un elemento e il suo bordo.*/
+  background-image:url('https://www.rollingstone.de/wp-content/uploads/2019/07/03/12/rammstein-tour-2019-121946620-scaled.jpg');
+  background-position:bottom;
+  background-size:710px 420px;
+  background-repeat: no-repeat;
+  box-shadow:-30px 30px #1c1c1c; 
+  border-radius: 50px;}
+
+  .TESTATA:hover {
+  box-shadow:0px 0px #1c1c1c;/*con la proprietà box-shadow
+   ed i suoi relativi valori Azzerati ,ho fatto in modo che 
+   quando passo con il cursore sul bordo indicato ,questo bordo svanisca!
+   Ovviamente posso fare la stessa cosa con molti altri attributi ,per esempio il testo!*/ 
+   text-shadow: none;
+   color:#fa5454 }
+   
+   h1:hover{
+   text-decoration:underline;
+   }
+
+div #componenti-lista{
+ background-color:#653434;
+ opacity: 0.9;
+ color:#ffdd9f; 
+ font-weight: bolder;
+ font-style: italic;
+ border-radius:40px 10px;
+}
+
+   ul li:first-child,:nth-child(3),:nth-child(5) {  /*in questo modo seleziono più 
+    elementi di una lista(senza . ne , ne ; tra <ul> e <li> 
+    ------ ul=elemento lista,
+    ------li=elemento della lista in questione(in questo caso il primo).ò
+    -----con gli attributi EVEN O ODD potrei invece selezionare direttamente 
+    tutti gli elementi li Pari o Dispari!*/
+   color:#e7e7e7 ;
+
+}
+
+ #Paragrafi h2 ,#Paragrafi2 h2{/*Gli ho detto:prendimi tutti i titoli h2 che sono contenuti nei rispettivi div!!!!*/
+      font-size: 30px;
+      color: #910101;
+      background-color: #8d99ae ;
+      border-style: solid;
+      border-color:#ffdd9f;
+      border-width:10px;
+      text-align: center;
+      font-family: 'Lexend Peta' ;
+      padding-bottom:20px; /*USATO X DISTANZIARE I TITOLI DAI PARAGFI SOPRA DI ESSI */
+      border-radius:30px 0px;
+    }
+   
+#Paragrafi p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #D3A550;
+  background-color: black;
+  border-color:#4f0000;
+  border-width:2px;
+  border-style:ridge;
+  border-radius: 10px;
+  padding:5px 5px;
+  margin: -3%;
+ /*USATO PER FARE AVVICINARE IL IN QST CASO IL TITOLO AL
+   PARAGRAFO(abbassando il titolo e facendolo
+   avvicinare al paragrafo in qst caso*/
+ margin-bottom: 1px;
+}
+ #Paragrafi2 p {
+    font-family:'Lexend Peta';
+    color:red;
+    font-size:small;
+    background-color:rgb(0, 0, 0) ;
+  border-color: #910101;
+  border-style: solid;
+  border-width: 2px;
+  padding: 5%;
+  border-radius:10px;
+}
+
+.paragrafom ,.paragrafo2,.paragrafo3 {
+  padding:20px 20px;
+  margin: 20px ;
+}
+
+      #contenitore-supremo{
+      max-width: 800px;
+      margin:auto;
+      /*max width ridimensionamento generale della pagina(di tutto il body)*/
+     }
+#fanheaven {
+      width: 100%;/*La proprietà width definisce la larghezza di un elemento. 
+      Può essere specificata utilizzando unità di misura come pixel (px), percentuale (%)*/
+      height: 80%;/*La proprietà height definisce l'altezza di un elemento.
+       Funziona in modo simile alla proprietà width e può essere specificata 
+       utilizzando le stesse unità di misura*/
+      padding-left: 0%;
+      border-radius:30px 30px;
+      
+    }
+
+    #video-contenitore{
+      width: 800px;
+      height:500px;
+    }
+    #video{
+    width: 100%;
+    height: 90%;
+    }
+          
+
+     div #link,.link {  /*quando sono tirati in ballo( div id e classe)
+      (PER RENDERE LA SELEZIONE PIù SPECIFICA E PRECISA) 
+      SCRIVERE la pre formula con gli stessi spazi e le virgole come mostrato,
+      altrimenti l codice nn funziona.
+      */
+      display: flex;
+      font-size:150%;
+      justify-content: center;
+      background-color: azure;
+      color: black;
+      margin: auto;
+    }
+       div #link,.link:hover {
+        color:blue;
+        text-decoration: none !important;}
+          
+        
+        .ringraziamento {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            background-color: red;
+            color:#ffcf76 ;
+            font-family: sans-serif;
+            margin: auto;
+                  } 
+          
+                    .background-piedipagina {
+                      display: flex;
+                      justify-content: center;
+                      background-color: yellow;
+                      padding: 20px; 
+                  }
+                  
+                  h3 {
+                    color: black;
+                     text-align: center;
+                    /* Regola la dimensione del testo secondo le tue preferenze */
+                  }
+                   
+                  .ticket-link {
+                   color: #ffffff;
+                   font-size: larger;
+                   font-weight: bolder;
+                   display: flex;
+                   justify-content: center;
+                  }
+                  .ticket-link:hover{
+                   text-decoration: none;
+                   color:blue;
+                  }
+                  /*ADATTAMENTI PER SCHERMI DA SMARTPHONE :*/
+                  @media screen and (max-width:1500px) {  h3.fede{display:none;}  }
+                    /*IN QUESTO CASO GLI STO DICENDO CHE,TUTTO CIO CHE SI TROVA DENTRO
+                     UNO SCHERMO CON DIMENSIONE con un massimo DI 800PX DEVE AVERE DETERMINATE
+                      CARATTERISTICHE*/
+                    /*Di fatto con la Proprietà ((( @MEDIA SCREEN and ))) vado a modificare i parametri
+                     che desidero come nell'esempio sopra, dove ho preso il mio tittolo
+                      h3 verticale e ho deciso di farlo sparire quando il mio schermo 
+                      va sotto gli800px,poiche su  uno schermo da smartphone darebbe 
+                      fastidio alla lettura e si sovraporrebbe alla lettura!/*
+
+
+
+                    /*CON LA PROPRIETà ASTERISCO( * ) VADO AD DIRE AL MIO CSS(SELEZIONAMI
+                     TUTTI GLI ELEMENTI PRESENTI NELLA MIA PAGINA WEB).
+                     Molto utile da abbinare all'attributo'' TRANSITION '' che mi permette di
+                     ''animare'' tutti gli elementi in questo caso della mia pagina web.
+                     Esempio concreto : */
+                     * {
+                       transition: all 2s/*la mia animazione deve durare 5 secondi*/
+                        ease 0.5s /*    EASE  (o in altrnativa LINEAR ) ,indica una transizione con una variazione graduale della 
+                        velocità nel corso del tempo, iniziando lentamente, accelerando nel mezzo e 
+                        rallentando verso la fine.
+                        OVVIAMENTE la proprietà transition è appicabile a molte altre proprietà(NON SOLO IL CANCELLETTO) MA
+                         NON compatibile con tutte,ad ESEMPIO è compatibile con i link( a {transition : all.. ease...},
+                         ma NON con compatibile per esempio alle barre di navigazione */
+                     }
+
+                     
+                 
+                 
+                
+                  
+                 
+                 
+                  
+                  
+
+                 
+   
+  
