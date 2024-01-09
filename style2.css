@@ -10,8 +10,8 @@
     /* Impostazioni per schermi medi */
     #video-container1 iframe,
   #video-container2 iframe {
-    width: 30%;
-    height: 250px;
+    width: 50%;
+    height: 300px;
   }
 }
   
@@ -21,8 +21,8 @@
     /* Impostazioni per schermi piccoli */
     #video-container1 iframe,
   #video-container2 iframe {
-    width: 30%;
-    height: 250px;
+    width: 50%;
+    height: 300px;
   }
 }
   
@@ -37,7 +37,7 @@ body {
 
    
    div .numero{
-    font-size: 20px;
+    font-size: 35px;
     padding-left: 15%;
    }
    
