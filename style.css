@@ -1,3 +1,79 @@
+/*TUTTO CIO CHE è CONTENUTO QUI DENTRO 
+SI RIFERISCE ALL'ELEMENTO-----  < STYLE>  -----CHE DOVREBBE ESSERE COMPRESO DENTRO AL DOCUMENTO HTML DIRETTAMENTE, SOTTO L'ELEMENTO <BODY>,MA PROPRIO PERCHE SI FANNO LE COSE CON ORDINE IL FILE CSS. LO TENIAMO A PARTE   */
+
+/*BORDER-RADIUS SMUSSA GLI SPIGOLI */
+
+/*PADDING PER DISTANZIARE  GLI ELEMENTID'INTERNO*/
+
+/*MARGIN USATO PER IL DISTANZIAMENTO TRA ELEMENTI ESTERNI*/
+
+/*MAX WIDTH-SE ATTRIBUTO ALL'ELEMENTO BODY(OVVERO TUTTA LA PAGINA) RIDIMENSIONA LA PAGINA INTERA */
+
+/*CON LA PROPRIETà BACKGROUND-IMAGE POSSO INSERIRE UNO SFONDO O UNA FOTO 
+COME SFONDO DI TUTTA LA PAGINA- ESEMPIO PER LO SFONDO:
+ BACKGROUND-IMAGE:LINEAR-GRADIENT(BLUE,RED,YELLOW);  (PER SFONDO DI MIX COLORI).
+  O PER INSERIRE UN'IMMAGINE :
+  BACKGROUND-IMAGE:url( inccollare QUI  DENTRO);  in questo caso l'immagine la si prende dalla
+   cartella dove contiene anche i correnti doc.css e html.
+  esempio:
+   BACKGROUND-IMAGE:URL('crop.jpeg');
+  CON BACKGR-SIZE si definisce la dimensione ovviamente , o per centarla BACKGR-POSITION:CENTER
+   e così via altre molte
+   proprietà da attribuire al background in qustione.es:
+ background-position:center;
+  background-size:600px 800px;).
+  La stessa cosa la può fare prendendo un'immagine da intenet importando la URL direttamente 
+  qui nel css senza doverla immettere anche nell'html! esempio:
+BACKGROUND-IMAGE:URL('https://images.unsplash.com/photo-1498262257252-c282316270bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2487&q=80');
+-per il  caso appena sopracitato  per importare dal web img è unsplash
+(assicurarsi si aprire l'immagine desiderata in una nuova finestra poi tasto condividi e copia il link|||!
+*/
+ 
+/*con la proprietà BOX-SHADOW si puo creare l'effetto ombra dietro a background-titoli -paragrafi ,
+e con le ralative misure si puo dare piu i meno ombra,inoltre si puo cambiare il colore dell'ombra 
+aggiungendo direttamente l'attributo colore subito dopo gli attributi misura.
+lo stesso lo si può fare digitando TEXT-SHADOW modificando nello stesso modo il testo*/
+
+/*con la proprietà BORDER-RADIUS posso smussare gli angoli dei bordi desiderati*/
+
+/*con la proprietà FLOAT si possono AFFIANCARE ai file Immagine  dei testi che <Seguono>. es: FLOAT:LEFT.FLOAT:RIGHT 
+. mentre con la proprietà FLOAT:CLEAR impedisco ad altri paragrafi o titoli che seguono di 'attaccarsi 'ai precedenti
+ file img e testo, messi insieme da float:left o right! */
+
+/*con la proprietà OPACITY modifichiamo la trasparenza dell'elemento(da 0(completamente trasp.) A 1(completamente visibile) per dargli il valore)*/
+
+/*con la proprietà POSITION posso cambiare posizione ad un elemento (molto utile per fissare un'elemento molto importante FISSO metre scrolli la pagina )es:
+ POSITION:FIXED; top 0px; left 0px; (E gli diciamo di non tenere nessuno spazio ne in alto ne a sinistra)(PER EFFETTO BANNER IRREMOVIBILE TIPO)         */
+
+ /*Le differenze principali tra id e classi sono:
+Specificità: Gli ID hanno una specificità maggiore rispetto alle classi. Ciò significa che se ci sono conflitti tra stili definiti per lo stesso elemento tramite un id e una classe, gli stili dell'id avranno la precedenza.
+Utilizzo: Gli id sono spesso utilizzati per selezionare un elemento specifico per lo styling o per manipolarlo con JavaScript. Le classi, d'altro canto, vengono utilizzate per raggruppare elementi che condividono un determinato stile o comportamento.
+ Le CLASSI sono più flessibili e consentono di applicare lo stesso stile a più elementi. Puoi riutilizzare le classi in tutto il documento, mentre gli id dovrebbero essere unici per ogni elemento.
+In generale, è una pratica comune utilizzare le classi per applicare stili simili a più elementi, mentre gli id vengono utilizzati per identificare elementi unici o per selezionare elementi specifici per interazioni JavaScript. Tuttavia, la scelta tra id e classi dipende dal contesto specifico e dalle esigenze del tuo progetto.*/
+
+/*La proprietà CSS "POSITION:RELATIVE;" permette di spostare un elemento all'interno del suo contenitore, come se fosse una scatola. Immagina di avere una scatola e un oggetto dentro di essa. Con questa proprietà, puoi spostare l'oggetto all'interno della scatola, ma senza influire sugli altri oggetti intorno ad esso. È un po' come muovere un giocattolo all'interno di una scatola senza che gli altri giocattoli intorno a esso vengano spostati.*/
+
+
+/*con la proprietà HOVER posso andare a modificare (nascondere o sottolineare )elementi .es:
+ h3.fede:hover{
+      color:none;   -------in questo modo gli ho detto nascondimi
+    text-shadow:none;-----il colore del testo, e l'ombra del testo al passagio del mouse!
+  
+    text-decoration:underline(sottolineami il testoal passaggio del mouse,MOLTO UTILE PER I LINK!)
+     }
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+  
+
 body {
     color:#D3A550;
    background-color: #303030;
@@ -17,16 +93,24 @@ body {
     display: flex;
     padding-top:10px;
     float:left;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     font-size:30px
-   }
+    font-family:Arial, Helvetica, sans-serif;
+     font-size:25px;
+     padding-top:40px ;
+    }
      
       #current-time{
       display: flex;
       font-size: 30px;
       padding-left:30px; 
       padding-top:45px;
-      font-family:fantasy;}
+      font-family:fantasy;
+   }
+
+   div #contenitore-orario {
+
+    justify-content: center;
+    display: flex;
+   }
 
     
     h3.fede {
@@ -235,6 +319,12 @@ font-size: 30px;
                    text-decoration: none;
                    color:blue;
                   }
+
+                   div .numero{
+                    font-size: 20px;
+                    color: #ffdd9f;
+                   }
+                   
                   /*ADATTAMENTI PER SCHERMI DA SMARTPHONE :*/
                   @media screen and (max-width:1500px) {  h3.fede{display:none;}  }
                     /*IN QUESTO CASO GLI STO DICENDO CHE,TUTTO CIO CHE SI TROVA DENTRO
