@@ -90,6 +90,7 @@ div #componenti-lista{
  font-weight: bolder;
  font-style: italic;
  border-radius:40px 10px;
+font-size: 30px;
 }
 
    ul li:first-child,:nth-child(3),:nth-child(5) {  /*in questo modo seleziono più 
@@ -129,6 +130,7 @@ div #componenti-lista{
    PARAGRAFO(abbassando il titolo e facendolo
    avvicinare al paragrafo in qst caso*/
  margin-bottom: 1px;
+ font-size: 25px;
 }
  #Paragrafi2 p {
     font-family:'Lexend Peta';
@@ -140,6 +142,7 @@ div #componenti-lista{
   border-width: 2px;
   padding: 5%;
   border-radius:10px;
+  font-size: 25px
 }
 
 .paragrafom ,.paragrafo2,.paragrafo3 {
@@ -184,11 +187,12 @@ div #componenti-lista{
       altrimenti l codice nn funziona.
       */
       display: flex;
-      font-size:350%;
+      font-size:300%;
       justify-content: center;
       background-color: azure;
       color: black;
       margin: auto;
+      font-family: Arial, Helvetica, sans-serif;
     }
        div #link,.link:hover {
         color:blue;
@@ -269,9 +273,6 @@ div #componenti-lista{
                   
                   
 
-                 
-   
-  
                  
    
   
